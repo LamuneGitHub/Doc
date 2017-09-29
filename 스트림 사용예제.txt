@@ -1,0 +1,13 @@
+#### 스트림 사용 예제 
+
+// 조건에 해당하는 첫번째 객체나 혹은 null을 반환
+AstEsmEntity esmEntity = esmEntityList.stream().filter(x -> x.getMajorYn()).findFirst().orElse(null);
+
+
+//:: 추가 승인자 목록
+Optional.ofNullable(srParamDto.getApprover()).ifPresent( list -> { list.stream().forEach(
+		tmpUser -> {
+			if (userService.findByEmpNo(tmpUser.getEmpNo()) == null) {	throw new LinkLegacyServiceException("03", "승인자 사번 정보가 올바르지 않습니다.(\"+tmpUser.getEmpNo()+\")");	}
+		});
+	});
+

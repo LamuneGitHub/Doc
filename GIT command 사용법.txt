@@ -1,0 +1,42 @@
+#### GIT 커멘드 사용법
+
+ // master 체크 아웃 
+ $ git checkout tksr-work
+
+	// 상태 확인
+	$ git status
+	
+	// 현재 작업중이던 내용 잠시 보류
+	$ git stash
+ 
+ 
+ // pull 받기 
+ $ git pull origin tksr-work
+ 
+ // 작업중이던 브랜치를 현재 master에 머지
+ $ git merge issue-3959TTS변경계획서작성연동
+ 
+ // 충돌 상태 확인
+ $ git statu
+ 
+ // 이클립스에서 충돌난것 변경
+ 
+ // 수정한 내용 반영
+ $ git add .
+ 
+ // 수정한 내용 반영 
+ $ git commit -v
+  
+ // push
+  $ git push origin tksr-work
+ 
+--------------------
+
+//다시 원래 브랜치로 돌아감
+$ git checkout issue-3959TTS변경계획서작성연동
+
+// 작업중이던 내용 잠시 보류를 복구
+$ git stash pop
+
+
+ 

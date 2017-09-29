@@ -1,0 +1,136 @@
+##허드슨 배치 실행 과정 ( 에러 난것 )
+
+Started by user 이상필
+Building in workspace /home1/irteam/deploy/jenkins_ndeploy/jobs/batch-getAllDomainZone/workspace
+[workspace] $ /bin/sh -xe /home1/irteam/deploy/jenkins_ndeploy/temp/hudson8996792036223550390.sh
++ cd /home1/irteam/deploy/ntree2-batch
++ java -Xmx1024m -Xms512m -jar batch.jar --spring.profiles.active=naver-test -ntree2.batch.name=DomainZoneSyncBatch
+16:53:44,358 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Setting ReconfigureOnChangeFilter scanning period to 5 seconds
+16:53:44,363 |-INFO in ReconfigureOnChangeFilter{invocationCounter=0} - Will scan for changes in [[]] every 5 seconds. 
+16:53:44,363 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Adding ReconfigureOnChangeFilter as a turbo filter
+16:53:44,369 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:53:44,369 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [CONSOLE]
+16:53:44,449 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:53:44,521 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [jdbc] to OFF
+16:53:44,522 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@26fd1baf - Propagating OFF level on Logger[jdbc] onto the JUL framework
+16:53:44,524 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [jdbc.sqltiming] to OFF
+16:53:44,524 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@26fd1baf - Propagating OFF level on Logger[jdbc.sqltiming] onto the JUL framework
+16:53:44,524 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [net.sf.ehcache] to OFF
+16:53:44,524 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@26fd1baf - Propagating OFF level on Logger[net.sf.ehcache] onto the JUL framework
+16:53:44,524 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.nbp.ntree2.common.cmdb.repository] to OFF
+16:53:44,524 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@26fd1baf - Propagating OFF level on Logger[com.nbp.ntree2.common.cmdb.repository] onto the JUL framework
+16:53:44,525 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+16:53:44,525 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@26fd1baf - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:53:44,525 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:53:44,526 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+16:53:44,526 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@4f0d924e - Registering current configuration as safe fallback point
+16:53:44,553 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@26fd1baf - Propagating INFO level on Logger[com.nbp.ntree2] onto the JUL framework
+16:53:44,555 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@26fd1baf - Propagating OFF level on Logger[org.springframework.sql] onto the JUL framework
+
+,--.  ,--.,--------.,------. ,------.,------.     ,---.      ,--.
+|  ,'.|  |'--.  .--'|  .--. '|  .---'|  .---'    '.-.  \    /    \
+|  |' '  |   |  |   |  '--'.'|  `--, |  `--,      .-' .'   |  ()  |
+|  | `   |   |  |   |  |\  \ |  `---.|  `---.    /   '-..--.\    /
+`--'  `--'   `--'   `--' '--'`------'`------'    '-----''--' `--'
+
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+“Perfection in design is not done when there is nothing more to add
+This is done when there is no more to discard.”
+- Eric S. Raymond
+
+2017-03-09 16:53:44.699 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 16:53:44.940 [main] INFO  c.n.n.batch.NTree2BatchApplication - Starting NTree2BatchApplication on dev-ntree2-jenkins01.ncl.nhnsystem.com with PID 106404 (/home1/irteam/deploy/ntree2-batch/batch.jar started by irteam in /home1/irteam/deploy/ntree2-batch)
+2017-03-09 16:53:44.942 [main] INFO  c.n.n.batch.NTree2BatchApplication - The following profiles are active: naver-test
+2017-03-09 16:53:45.085 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b02a12a: startup date [Thu Mar 09 16:53:45 KST 2017]; root of context hierarchy
+2017-03-09 16:53:53.217 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'imsyncJob' with a different definition: replacing [Generic bean: class [com.nbp.ntree2.batch.im.service.ImSyncJob]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/home1/irteam/deploy/ntree2-batch/batch.jar!/com/nbp/ntree2/batch/im/service/ImSyncJob.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=batchConfiguration; factoryMethodName=imsyncJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/nbp/ntree2/batch/config/BatchConfiguration.class]]
+2017-03-09 16:53:55.978 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'transactionManager' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=transactionManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=oracleConfiguration; factoryMethodName=transactionManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/nbp/ntree2/_infra/config/OracleConfiguration.class]]
+2017-03-09 16:54:02.657 [main] WARN  o.s.c.a.ConfigurationClassEnhancer - @Bean method ScopeConfiguration.stepScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2017-03-09 16:54:02.699 [main] WARN  o.s.c.a.ConfigurationClassEnhancer - @Bean method ScopeConfiguration.jobScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2017-03-09 16:54:02.785 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-03-09 16:54:02.841 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'NTree2Configuration' of type [class com.nbp.ntree2._infra.config.NTree2Configuration$$EnhancerBySpringCGLIB$$2a823c01] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-09 16:54:02.855 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesValidator' of type [class com.nbp.ntree2.Ntree2PropertiesValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-09 16:54:05.586 [main] INFO  com.zaxxer.hikari.HikariDataSource - MainDBPool - is starting.
+2017-03-09 16:54:06.375 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [jar:file:/home1/irteam/deploy/ntree2-batch/batch.jar!/lib/common-0.0.1.jar!/schema.sql]
+2017-03-09 16:54:06.798 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [jar:file:/home1/irteam/deploy/ntree2-batch/batch.jar!/lib/common-0.0.1.jar!/schema.sql] in 422 ms.
+2017-03-09 16:54:06.808 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [jar:file:/home1/irteam/deploy/ntree2-batch/batch.jar!/lib/common-0.0.1.jar!/data.sql]
+2017-03-09 16:54:06.812 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [jar:file:/home1/irteam/deploy/ntree2-batch/batch.jar!/lib/common-0.0.1.jar!/data.sql] in 3 ms.
+2017-03-09 16:54:07.283 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'imBatchPersistenceUnit'
+2017-03-09 16:54:07.358 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: imBatchPersistenceUnit
+	...]
+2017-03-09 16:54:07.732 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2017-03-09 16:54:07.746 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-03-09 16:54:07.754 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-03-09 16:54:09.250 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-03-09 16:54:09.867 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.CUBRIDDialect
+2017-03-09 16:54:09.928 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-03-09 16:54:10.686 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-09 16:54:12.769 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'legacyPersistenceUnit'
+2017-03-09 16:54:12.771 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: legacyPersistenceUnit
+	...]
+2017-03-09 16:54:13.387 [main] WARN  o.a.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 60
+2017-03-09 16:54:13.890 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: com.nbp.ntree2.common.ExtendedOracle10gDialect
+2017-03-09 16:54:13.933 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-09 16:54:14.799 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'mainPersistenceUnit'
+2017-03-09 16:54:14.802 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: mainPersistenceUnit
+	...]
+2017-03-09 16:54:16.160 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: com.nbp.ntree2.common.ExtendedOracle10gDialect
+2017-03-09 16:54:18.529 [main] WARN  o.h.t.d.j.JavaTypeDescriptorRegistry - Could not find matching type descriptor for requested Java class [java.util.List]; using fallback
+2017-03-09 16:54:18.534 [main] WARN  o.h.t.d.j.JavaTypeDescriptorRegistry - Could not find matching type descriptor for requested Java class [java.util.Set]; using fallback
+2017-03-09 16:54:18.689 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-09 16:54:25.901 [main] ERROR o.h.j.i.metamodel.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : com.nbp.ntree2.common.customtable.domain.ComPeopleTableConfigEntity_#sort; expected type :  org.hibernate.jpa.internal.metamodel.SingularAttributeImpl; encountered type : javax.persistence.metamodel.ListAttribute
+2017-03-09 16:54:25.902 [main] ERROR o.h.j.i.metamodel.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : com.nbp.ntree2.common.customtable.domain.ComPeopleTableConfigEntity_#columns; expected type :  org.hibernate.jpa.internal.metamodel.SingularAttributeImpl; encountered type : javax.persistence.metamodel.ListAttribute
+2017-03-09 16:54:25.905 [main] ERROR o.h.j.i.metamodel.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : com.nbp.ntree2.common.ticket.common.domain.TktBaseVwEntity_#referencerIdMulti; expected type :  org.hibernate.jpa.internal.metamodel.SingularAttributeImpl; encountered type : javax.persistence.metamodel.SetAttribute
+2017-03-09 16:54:26.014 [main] ERROR o.h.j.i.metamodel.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : com.nbp.ntree2.common.ticket.common.domain.TktBaseEntity_#referencerIdMulti; expected type :  org.hibernate.jpa.internal.metamodel.SingularAttributeImpl; encountered type : javax.persistence.metamodel.SetAttribute
+2017-03-09 16:54:26.016 [main] ERROR o.h.j.i.metamodel.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : com.nbp.ntree2.common.ticket.common.domain.TktWorkBaseEntity_#assigneeIdHistMulti; expected type :  org.hibernate.jpa.internal.metamodel.SingularAttributeImpl; encountered type : javax.persistence.metamodel.SetAttribute
+2017-03-09 16:54:26.027 [main] ERROR o.h.j.i.metamodel.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : com.nbp.ntree2.common.customtable.domain.ComDefaultTableConfigEntity_#sort; expected type :  org.hibernate.jpa.internal.metamodel.SingularAttributeImpl; encountered type : javax.persistence.metamodel.ListAttribute
+2017-03-09 16:54:26.027 [main] ERROR o.h.j.i.metamodel.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : com.nbp.ntree2.common.customtable.domain.ComDefaultTableConfigEntity_#columns; expected type :  org.hibernate.jpa.internal.metamodel.SingularAttributeImpl; encountered type : javax.persistence.metamodel.ListAttribute
+2017-03-09 16:54:54.839 [main] INFO  org.javers.java8support.Java8AddOns - loading Java8 add-ons ...
+2017-03-09 16:54:54.955 [main] INFO  o.j.c.m.scanner.ScannerModule - using FIELD mappingStyle
+2017-03-09 16:54:55.156 [main] INFO  org.javers.core.JaversBuilder - using fake InMemoryRepository, register actual implementation via JaversBuilder.registerJaversRepository()
+2017-03-09 16:54:55.248 [main] INFO  org.javers.core.JaversBuilder - JaVers instance started in 553 ms
+2017-03-09 16:55:01.097 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy method [final java.util.List com.nbp.ntree2.common.servicecatalog.service.ComRequestAssignmentMapService.getComRequestAssignmentMapEntityList(java.lang.String)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-03-09 16:55:20.497 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+2017-03-09 16:55:21.723 [main] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: ORACLE
+2017-03-09 16:55:22.157 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2017-03-09 16:55:24.401 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.context.annotation.AnnotationConfigApplicationContext@4b02a12a: startup date [Thu Mar 09 16:53:45 KST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-03-09 16:55:24.445 [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-03-09 16:55:24.942 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-03-09 16:55:25.041 [main] INFO  c.n.n.batch.NTree2BatchApplication - Started NTree2BatchApplication in 102.019 seconds (JVM running for 103.423)
+2017-03-09 16:55:25.042 [main] INFO  ntree2 - Batch started ===================================================
+2017-03-09 16:55:25.042 [main] INFO  ntree2 - === batch environment args : [--spring.profiles.active=naver-test, -ntree2.batch.name=DomainZoneSyncBatch]
+2017-03-09 16:55:25.062 [main] INFO  c.n.n.batch.NTree2BatchApplication - ######################################################################################
+2017-03-09 16:55:25.063 [main] INFO  c.n.n.batch.NTree2BatchApplication - #  Start Batch : DomainZoneSyncBatch
+2017-03-09 16:55:25.082 [main] ERROR ntree2 - Batch execution error 
+com.nbp.ntree2.webcommon.exception.BizRuntimeException: No batch named 'DomainZoneSyncBatch' is defined
+	at com.nbp.ntree2.batch.NTree2BatchApplication.runBatch(NTree2BatchApplication.java:246)
+	at com.nbp.ntree2.batch.NTree2BatchApplication.main(NTree2BatchApplication.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:54)
+	at java.lang.Thread.run(Thread.java:745)
+com.nbp.ntree2.webcommon.exception.BizRuntimeException: No batch named 'DomainZoneSyncBatch' is defined
+	at com.nbp.ntree2.batch.NTree2BatchApplication.runBatch(NTree2BatchApplication.java:246)
+	at com.nbp.ntree2.batch.NTree2BatchApplication.main(NTree2BatchApplication.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:54)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 16:55:25.092 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b02a12a: startup date [Thu Mar 09 16:53:45 KST 2017]; root of context hierarchy
+2017-03-09 16:55:25.137 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-03-09 16:55:25.205 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+2017-03-09 16:55:25.355 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'mainPersistenceUnit'
+2017-03-09 16:55:25.360 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'legacyPersistenceUnit'
+2017-03-09 16:55:25.360 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'imBatchPersistenceUnit'
+2017-03-09 16:55:25.707 [main] INFO  c.n.n._.c.DBConnectionPoolConfiguration$HikariCpWithLog4jdbcWrapper - Hikari DBPool Destroying ... 
+2017-03-09 16:55:25.708 [main] INFO  com.zaxxer.hikari.pool.HikariPool - MainDBPool - is closing down.
+2017-03-09 16:55:25.816 [main] INFO  c.n.n._.c.DBConnectionPoolConfiguration$HikariCpWithLog4jdbcWrapper - Hikari DBPool Destroyed ...
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

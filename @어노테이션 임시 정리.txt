@@ -1,0 +1,33 @@
+----
+	
+	@Post("/referencer")
+	@ResponseStatus(org.springframework.http.HttpStatus.CREATED)
+	public Map<String, Object> createReferencer(
+		@RequestBody final TktReferenceDto.Create dto,
+		final CommonRequestParam comParam) {
+		final TktReferenceEntity entity = refService.create(dto);
+
+		comParam.setFields("sid");
+		return mapper.filterObjectByGetter(entity, comParam);
+	}
+
+----	
+	
+	@Put("/referencer")
+	public void updateReferencer(
+		@RequestBody final TktReferenceDto.Update dto) {
+
+		refService.update(dto);
+	}
+
+----	
+	
+	@Delete("/referencer/{sid}")
+	public void deleteReferencer(
+		@PathVariable("sid") final Long sid) {
+		refService.delete(sid);
+	}
+
+----	
+	
+	public TktReferenceEntity create(@NotNull TktReferenceDto.Create dto) {	

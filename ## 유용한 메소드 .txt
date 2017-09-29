@@ -1,0 +1,45 @@
+## 유용한 메소드 	
+	
+	public static String removeNoneChar(String str){
+		if(StringUtils.isEmpty(str))
+			return str;
+		 String match = "\u0020\u2007\u202F\u2026\uFEFF\u00A0[^\u321C\u3040-\u309F\u30A0-\u30FF\u31F0-\u31FF\u8EA1-\u8EFE\uFF61-\uFF9F\u2E80-\u2EFF\u3400-\u4DBF\u4E00-\u9FBF\uF900-\uFAFF\u20000-\u2A6DF\u2F800-\u2FA1F\uAC00-\uD7A3xfe!-~\\s]";
+	      str =str.replaceAll(match, " ");
+	      //제어문자 제거를 위해 한번더 수행
+			match="\\p{Cntrl}";
+	      str =str.replaceAll(match, "");
+	      return str.trim();
+	}
+	
+	
+create or replace function GET_TIMESTAMP_CURRENT_UTC 
+    return number 
+is
+    base_point constant timestamp := to_timestamp('1970-01-01 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3');
+    now constant timestamp := systimestamp AT TIME ZONE 'UTC' ;
+begin
+    return (     
+       EXTRACT (DAY    FROM (now-base_point)) * 24 * 3600000 +
+       EXTRACT (HOUR   FROM (now-base_point))      * 3600000 +
+       EXTRACT (MINUTE FROM (now-base_point))      *   60000 +
+ ROUND(EXTRACT (SECOND FROM (now-base_point))      *    1000 )
+ )
+ ;
+end;
+ 	
+	
+create or replace FUNCTION        GET_TIMESTAMP (s_time varchar2,i_timezonesec number:=32400) return number 
+is
+    base_point constant timestamp := to_timestamp('1970-01-01 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3');
+    target_point constant timestamp := to_timestamp(s_time, 'YYYY-MM-DD HH24:MI:SS') ;
+begin 
+    return ((     
+                 EXTRACT (DAY    FROM (target_point-base_point)) * 24 * 3600000 +
+                 EXTRACT (HOUR   FROM (target_point-base_point))      * 3600000 +
+                 EXTRACT (MINUTE FROM (target_point-base_point))      *   60000 +
+           ROUND(EXTRACT (SECOND FROM (target_point-base_point))      *    1000 )
+           ) - (i_timezonesec * 1000));    
+end ;
+ 
+
+

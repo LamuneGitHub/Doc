@@ -1,0 +1,169 @@
+
+
+
+
+
+NAVER@AD00047454 MINGW64 ~
+$
+
+
+NAVER@AD00047454 MINGW64 ~
+$
+
+
+NAVER@AD00047454 MINGW64 ~
+$
+
+NAVER@AD00047454 MINGW64 ~
+$
+cd
+NAVER@AD00047454 MINGW64 ~
+$
+
+NAVER@AD00047454 MINGW64 ~
+$
+/
+NAVER@AD00047454 MINGW64 ~
+$ cd /c/dev/git
+
+NAVER@AD00047454 MINGW64 /c/dev/git
+$ ls
+NTree2-Web/
+
+NAVER@AD00047454 MINGW64 /c/dev/git
+$ cd NTree2-Web/
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 35 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    gradle/wrapper/gradle-wrapper.jar
+        deleted:    gradle/wrapper/gradle-wrapper.properties
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   gradlew
+        modified:   gradlew.bat
+        modified:   link/src/main/java/com/nbp/ntree2/link/_infra/interceptors/L                            inkAuthInterceptor.java
+        modified:   link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest                            .java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        gradle/
+        link/src/test/java/com/nbp/ntree2/link/ticketstatus/
+
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git update-index --assume-unchanged gradle
+fatal: Unable to mark file gradle
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 35 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    gradle/wrapper/gradle-wrapper.jar
+        deleted:    gradle/wrapper/gradle-wrapper.properties
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   gradlew.bat
+        modified:   link/src/main/java/com/nbp/ntree2/link/_infra/interceptors/L                            inkAuthInterceptor.java
+        modified:   link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest                            .java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        gradle/
+        link/src/test/java/com/nbp/ntree2/link/ticketstatus/
+
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git reset
+Unstaged changes after reset:
+M       gradle/wrapper/gradle-wrapper.jar
+M       gradle/wrapper/gradle-wrapper.properties
+M       gradlew.bat
+M       link/src/main/java/com/nbp/ntree2/link/_infra/interceptors/LinkAuthInter                            ceptor.java
+M       link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest.java
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git checkout -- gradle
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 35 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   gradlew.bat
+        modified:   link/src/main/java/com/nbp/ntree2/link/_infra/interceptors/L                            inkAuthInterceptor.java
+        modified:   link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest                            .java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        link/src/test/java/com/nbp/ntree2/link/ticketstatus/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git update-index --assume-unchanged gradle
+fatal: Unable to mark file gradle
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git update-index --assume-unchanged gradle/*
+fatal: Unable to mark file gradle/wrapper
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git update-index --assume-unchanged gradle/wrapper/gradle-wrapper.properties
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git update-index --assume-unchanged gradle/wrapper/gradle-wrapper.jar
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git update-index --assume-unchanged gradlew
+gradlew      gradlew.bat
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git update-index --assume-unchanged gradlew.bat
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 35 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   link/src/main/java/com/nbp/ntree2/link/_infra/interceptors/L                            inkAuthInterceptor.java
+        modified:   link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest                            .java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        link/src/test/java/com/nbp/ntree2/link/ticketstatus/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$ ^C
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (master)
+$

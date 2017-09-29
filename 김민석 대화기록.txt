@@ -1,0 +1,46 @@
+2017-03-06 10:14 이상필 http://wiki.navercorp.com/pages/viewpage.action?pageId=313564249
+2017-03-06 15:15 이상필 배치 프로세스를 개발하려고 합니다.
+저희 ntree 2.0 배치 구조가 어떻게 되는지 잠깐 설명 부탁드리려고 하는데요. 시간 괜찮으신가요?
+2017-03-09 14:36 이상필 문제 되는 부분 찾았습니다^^
+2017-03-09 15:31 김민석 도메인: dev.link.ntree.navercorp.com
+Host: dev-ntree2-link01.ncl (10.101.18.24)
+2017-03-09 15:31 김민석 ntree.navercorp.com 에서 서비스요청 > 인증/접근권한 > 인증접근권한 통합요청
+2017-03-09 15:31 김민석 GW: dgw01.nhnsystem.com
+2017-03-09 15:31 김민석 인증접근권한 통합요청으로 계정/권한 신청을 먼저 해야 합니다.
+서버 접속방법은 wikin에 정리되어 있을텐데.. 지금 점검중인가 보네요. GW로 먼저 ssh 접속한 후에 목적지서버로 다시 rlogin해서 접속합니다.
+2017-03-09 15:31 김민석 http://wiki.navercorp.com/pages/viewpage.action?pageId=324060816
+2017-03-09 15:40 이상필 
+Note: Running JPAAnnotationProcessor
+/home1/irteam/deploy/jenkins_ndeploy/jobs/ntree2-batch-build-without-test/workspace/common/src/main/java/com/nbp/ntree2/common/external/service/DNSService.java:38: error: cannot find symbol
+import com.nbp.ntree2.common.common.domain.QInfDomainZoneEntity;
+                                          ^
+  symbol:   class QInfDomainZoneEntity
+  location: package com.nbp.ntree2.common.common.domain
+Note: Running JPAAnnotationProcessor
+1 error
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':common:compileQuerydsl'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+
+2017-03-10 14:03 김민석 dev.link.ntree.navercorp.com
+2017-03-10 14:03 이상필 감사합니다 ^-^
+2017-03-13 11:40 김민석 상필님 지금 시간되시면 잠시만 제자리로 와 주세요 외부 DB 사용법 설명 드릴께요
+2017-03-13 11:40 이상필 잠시만요
+2017-03-13 17:01 김민석 상필님 잠시만 제자리로 와주실수 잇나요?
+2017-03-13 17:01 이상필 네
+2017-03-13 17:12 김민석 refactoring 소스 push 하였으니 형상 맞춰 주시기 바랍니다.
+2017-03-13 17:12 이상필 네
+2017-03-15 18:11 이상필 민석님  혹시  티켓의 REQUEST_CD 에 해당하는 '서비스 요청명'을 DB에서 찾는 방법 아시나요? COM_CD 나 COM_REQUEST_DEFINITION 테이블 에서는 찾을 수가 없네요.
+2017-03-15 18:11 김민석 ?
+2017-03-15 18:11 김민석 아직 티켓관련 서비스 작업 한적이 전 없습니다. 
+2017-03-15 18:11 이상필 네~ ^-^ 알겟습니다
+2017-03-15 18:13 김민석 개발 메신저에 질문올려보세요
+2017-03-15 18:13 이상필 네~ 감사합니다. ^-^

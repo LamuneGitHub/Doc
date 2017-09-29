@@ -1,0 +1,23 @@
+	/**
+	 * 001.CI자동완성 
+	 * @param searchTerm
+	 * @return CI 목록
+	 * 요청자 화면에서 사용 시 /ci/auto-complete?q=tang&forStaff=false&ncloudVm=false&status=IN_SERVICE&searchRange=IP
+	 * 처리자 화면에서 사용 시 /ci/auto-complete?q=tang&forStaff=true
+	 */
+	@Get("/ci/auto-complete")
+	public List<CmdbDto.AutoCompleteDto> selectServerForAutocomplete(
+		@RequestParam("q") String searchTerm,
+		@RequestParam(value = "ciType", required = false , defaultValue = "SERVER") CiTypeEnum ciTypeEnum,
+		@RequestParam(value = "forStaff", required = false) boolean forStaff,
+		@RequestParam(value = "ncloudVm", required = false) Boolean nCloudVm,
+		@RequestParam(value = "useCache", required = false, defaultValue = "true") boolean useCache,
+		@RequestParam(value = "status", required = false) CiStatusEnum[] status,
+		@RequestParam(value = "searchRange", required = false) List<String> searchRange,
+		@RequestParam(value = "size", required = false, defaultValue = "20") int size) {
+
+		CmdbDto.QueryParam param=getQueryParam(CiSearchOptionEnum.CI_AUTOCOMPLETE
+		, searchTerm, forStaff, nCloudVm, useCache, status, searchRange, size);
+
+		return service.selectCiForAutoComplete(ciTypeEnum, param);
+	}

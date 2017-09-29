@@ -1,0 +1,96 @@
+## 인텔리J TIP
+
+# 찾아야할  기능 
+
+	* 자동 import 
+		Ctrl + Alt + O
+		
+	* 그래들 빌드 선택 하는 방법
+		그래들 창 보는 방법
+		
+	* 정의한 부분과 실제 구현한 부분을 따로 찾아 가는 방법
+	
+	* 호출 구조를 역으로 따라 가는 방법
+	
+	
+
+
+
+------------------------------
+
+* Help > productiviy Guid  활용 
+	: 사람들이 유용하게 많이 사용하는 기능 무엇인지 확인 가능
+
+* Presentation Assistant 플러그인
+	: 지금 사용한 기능의 단축키를 알려줌
+	설치법 : settings -> plugins -> browse repositories -> Presentation Assistant 설치
+
+
+#  검색기능
+	Ctrl + N : 클래스명으로 검색
+	Ctrl + E : 최근 이용한 파일 목록
+	Ctrl + Shift + A : action 검색
+	
+	Shift 더블클릭 :  모든것에 대한 검색기능
+
+	* 검색 옵션
+		/ 	:= 폴더
+		검색조건: 숫자   :=  클래스  + 라인 이동
+		
+# 창이동  
+	Alt + 0~9
+	
+	* 파일 네비게이션 창 
+		Alt + 1 : 프로젝트 탭 활성/비활성
+	
+	* 에디터 창으로 포커스 
+		ESC
+		
+	* 창 크기 조정
+		Ctrl + Shift + <- or ->
+		
+	* 해당창 최대로 
+		Ctrl + Shift + F12
+
+	*  파일 Out Line
+		Ctrl + F12  : 검색 팝업
+		Alt  + 7 	:  창 보이기/닫기
+		
+		
+# 에디터 
+
+	* 선택확장
+		Ctrl + w
+		
+	* 파라미터 정보 확인
+		Ctrl + p
+		
+	* 자동완성
+		Ctrl + space
+		
+	* 스마트 자동완성
+		Ctrl + Shift + space
+	
+	* Statemet 자동완성
+		Enter
+		Ctrl + Shift + Enter
+		
+	* Surround with
+		Ctrl + Alt  + T
+		Ctrl + W
+		
+	* 정규표현식 체크
+		Alt + Enter
+
+	* 코드 자동 정렬
+		Ctrl + Alt + L 
+		
+	
+
+		
+	
+		
+		
+		
+
+	

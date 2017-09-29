@@ -1,0 +1,132 @@
+## 선택 
+	Ctrl + w	:	선택확장 ( 단어 ->... 계속 범위 확장 )
+	Shift + end	:	선택된 현재 커서 까지 end 곳 
+	Shift + home	:	선택된 현재 커서 까지 home 곳 
+	Ctrl + [ or ]	:	이동 커서 까지 장 초 / 말 괄호 곳
+
+## 수정/편집
+	Ctrl + z : undo
+	Ctrl + Shift + z :	redo
+	Ctrl + Shift + u	:	스네이크 <->카멜 케이스
+	Ctrl + R	:	바꾸기 
+	Ctrl + Y	:	 줄 삭제
+	Ctrl + D	:	줄 복제
+	Ctrl + Shift + J	:	아래줄 합치기
+	Shift + Enter	:	 커서 아래줄에 빈줄 추가 
+	Ctrl + Alt + Enter	:	커서 위쪽에 빈줄 추가
+	Ctrl + delete	:	커서 뒤에 단어 삭제 
+	Ctrl + BackSpace	:	커서 앞 단어 삭제 
+
+	Ctrl + Alt + V	:	 클립보드?
+
+# 자동완성
+
+	Ctrl + Alt  + T	:	Surround with
+	Ctrl + W	:	Surround with
+
+	Ctrl + Alt + L	:		코드 자동 정렬
+	Ctrl + space	: 자동완성
+	Ctrl + Shift + space	:	스마트 자동완성
+	Ctrl + Shift + Enter	:	Statemet 자동완성
+	Alt + Enter 	:	코드  변경 제안~  ㅇ
+	Alt + insert	:	자동 코드 생성 ( get , set , toString... )
+
+	Ctrl + o	:	override 할 메소드 선택해서 추가
+
+	Ctrl + J	:	구문 snipit
+
+	Ctrl + Alt + O : 사용 하지 않는 import 정리
+
+	Ctrl + Alt + L : 코드 포멧팅
+	Ctrl + Alt + i : 선택한 부분 코드 포멧팅
+	
+	Alt + Enter	:	정규표현식 체크
+	
+
+##  검색/이동 기능
+	Ctrl + N : 클래스명으로 검색
+	Ctrl + E : 최근 이용한 파일 목록
+	Ctrl + Shift + A : action 검색
+	Ctrl + Shift + F :  파일에서 찾기
+	Ctrl + F12  : 파일 Out Line 검색 팝업
+	Shift 더블클릭	:  모든것에 대한 검색기능
+	
+		 * 검색 옵션
+		  /  := 폴더
+		  검색조건: 숫자   :=  클래스  + 라인 이동
+
+	Alt + F3	:	선택한 텍스트, 하나하나 아래로 찾기 같은 텍스트 및 강조
+	Ctrl + Shift + F7	:	동일한 단어 강조 ( ESC로 해제 ) 
+
+	Ctrl + Alt + 좌/우 : 이전 위치
+	Ctrl + Alt + 위/아래 : Find 에서 이전/다음항목
+	Alt + F7 :  변수 / 클래스 호출된 곳 
+	Ctrl + Alt + F7 :  변수 / 클래스 호출된 곳 	
+	Ctrl + U	:	선택 부모 클래스로
+
+	Ctrl + Q 마우스 변수 / 类名 / 방법 명 등 위에 놓다 (해도 지금 팁 보충 때 따라) 문서 내용 보이기 같은 비슷한 기능 그리고 하나Ctrl + Shift + I 
+
+	Ctrl + B 커서 아래 클래스 혹은 방법은 바로 열기 (대하여 전면 지원 잘 수 있는 name, 예를 들면 직접 통해 class 위치 까지 css 파일 위치) (에 ctrl+ 커서 지향) 
+
+## 북마크﻿ 
+		Toggle bookmark : F11 
+		Toggle bookmark with mnemonic : Ctrl + F11 
+		Go to numbered bookmark : Ctrl + #[0-9] 
+		Show bookmarks : Shift + F11
+
+		Ctrl + 1, 2, 3, 4…. : 북마크 이동
+		Ctrl+Shift+1,2,3,4… : 북마크 추가
+		Shift + F11 보기 북마크 
+		Alt + 2 : 북마크 바
+		
+		추가로 지정한 단축키
+		다음 북마크  : alt + 
+		이전 북마크  : alt + , 
+	
+	
+## 정보
+	Ctrl + J	:	자동 코드 팁 (팁 자기가 정의 코드 포맷) 
+	Ctrl + P	:	파라미터 인자의 형식 보기
+	Ctrl + Shift + I : 메소드 코드 확인 popup 창 보기
+	Alt + Q	:	보기 방법 성명 (왼쪽 위 나타나서 Tip 층 팁), 더는 스크롤 올라가 볼 필요가 없다 
+	Alt + F1	:	팝업 파일 선택 목표 이 잘 쓰는
+
+## Window
+
+	ESC	:	에디터 창으로 포커스 
+	Ctrl + Tab	:	편집창 전환
+
+	Alt + 0~9	:	해당 탭 on/off
+		Alt  + 7  :	파일 Out Line
+		Alt + 1	:	프로젝트 탭
+	
+	Ctrl + K	:	VCS제출 프로젝트
+ 
+	Ctrl + Shift + <- or ->	:	창 크기 조정
+	Ctrl + Shift + F12	:	해당창 최대로 
+  
+
+-----------------------------------
+
+		
+
+# 찾아야할  기능 
+
+ * 그래들 빌드 선택 하는 방법
+  그래들 창 보는 방법
+  
+ * 정의한 부분과 실제 구현한 부분을 따로 찾아 가는 방법
+ 
+------------------------------
+
+* Help > productiviy Guid  활용 
+ : 사람들이 유용하게 많이 사용하는 기능 무엇인지 확인 가능
+
+* Presentation Assistant 플러그인
+ : 지금 사용한 기능의 단축키를 알려줌
+ 설치법 : settings -> plugins -> browse repositories -> Presentation Assistant 설치
+
+  
+
+
+

@@ -1,0 +1,25 @@
+사용 jar , 패키지 알아내는 소스
+
+	private static void OutputJaxpImplementationInfo() {
+		log.info( "LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE " );
+
+		log.info(getJaxpImplementationInfo("DocumentBuilderFactory", DocumentBuilderFactory.newInstance().getClass()));
+		log.info(getJaxpImplementationInfo("XPathFactory", XPathFactory.newInstance().getClass()));
+		log.info(getJaxpImplementationInfo("TransformerFactory", TransformerFactory.newInstance().getClass()));
+		log.info(getJaxpImplementationInfo("SAXParserFactory", SAXParserFactory.newInstance().getClass()));
+
+		log.info( "LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE LAMUNE " );
+
+
+
+	}
+
+	private static String getJaxpImplementationInfo(String componentName, Class componentClass) {
+	    CodeSource source = componentClass.getProtectionDomain().getCodeSource();
+	    return MessageFormat.format(
+	            "{0} implementation: {1} loaded from: {2}",
+	            componentName,
+	            componentClass.getName(),
+	            source == null ? "Java Runtime" : source.getLocation());
+	}
+

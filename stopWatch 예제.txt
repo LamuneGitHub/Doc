@@ -1,0 +1,11 @@
+import org.apache.commons.lang3.time.StopWatch;
+
+protected StopWatch stopWatch = new StopWatch();
+
+stopWatch.reset();
+stopWatch.start();
+
+stopWatch.stop();
+log.info(format,stopWatch.getTime());
+
+

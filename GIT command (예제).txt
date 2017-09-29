@@ -1,0 +1,736 @@
+
+NAVER@AD00047454 MINGW64 ~
+$
+
+NAVER@AD00047454 MINGW64 ~
+$
+
+NAVER@AD00047454 MINGW64 ~
+$
+
+NAVER@AD00047454 MINGW64 ~
+$
+
+NAVER@AD00047454 MINGW64 ~
+$
+
+NAVER@AD00047454 MINGW64 ~
+$ cd /c/
+
+NAVER@AD00047454 MINGW64 /c
+$ ls
+'$Recycle.Bin'/             installAgent.log        Recovery/
+ BzIcons.dll*               IzexTemp/               SEPQuarantine/
+ data/                      MSOCache/              'System Volume Information'/
+ dev/                       pagefile.sys            Temp/
+ dev_pe/                    PerfLogs/               tmp/
+'Documents and Settings'@  'Program Files'/         UserDownload/
+ hiberfil.sys              'Program Files (x86)'/   Users/
+ home1/                     ProgramData/            Windows/
+
+NAVER@AD00047454 MINGW64 /c
+$ cd dev
+
+NAVER@AD00047454 MINGW64 /c/dev
+$ ls
+ apache-tomcat-7.0.75-windows-x86.zip         sqldeveloper-4.0.3.16.84-x64/
+ ARlib/                                       sqldeveloper-4.0.3.16.84-x64.zip
+ ARlib.zip                                    tomcat_7_32/
+ eclipse/                                     workspace/
+ git/                                         workspace_NTree1/
+'IntelliJ IDEA Community Edition 2016.3.5'/   workspace_NTree2/
+ oracle/
+
+NAVER@AD00047454 MINGW64 /c/dev
+$ cd workspace
+
+NAVER@AD00047454 MINGW64 /c/dev/workspace
+$ ls -l
+total 4
+drwxr-xr-x 1 NAVER 197121 0 3월   7 13:24 LamuneTest/
+drwxr-xr-x 1 NAVER 197121 0 3월   2 11:06 RemoteSystemsTempFiles/
+
+NAVER@AD00047454 MINGW64 /c/dev/workspace
+$ cd ../workspace
+workspace/        workspace_NTree1/ workspace_NTree2/
+
+NAVER@AD00047454 MINGW64 /c/dev/workspace
+$ cd ../workspace
+workspace/        workspace_NTree1/ workspace_NTree2/
+
+NAVER@AD00047454 MINGW64 /c/dev/workspace
+$ cd ../workspace_NTree2/
+
+NAVER@AD00047454 MINGW64 /c/dev/workspace_NTree2
+$ ls
+AAATest/  RemoteSystemsTempFiles/  Servers/
+
+NAVER@AD00047454 MINGW64 /c/dev/workspace_NTree2
+$ cd ../
+
+NAVER@AD00047454 MINGW64 /c/dev
+$ ls
+ apache-tomcat-7.0.75-windows-x86.zip         sqldeveloper-4.0.3.16.84-x64/
+ ARlib/                                       sqldeveloper-4.0.3.16.84-x64.zip
+ ARlib.zip                                    tomcat_7_32/
+ eclipse/                                     workspace/
+ git/                                         workspace_NTree1/
+'IntelliJ IDEA Community Edition 2016.3.5'/   workspace_NTree2/
+ oracle/
+
+NAVER@AD00047454 MINGW64 /c/dev
+$ cd git
+
+NAVER@AD00047454 MINGW64 /c/dev/git
+$ ls
+NTree2-Web/
+
+NAVER@AD00047454 MINGW64 /c/dev/git
+$ cd NTree2-Web/
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (issue-3959TTS변경계획서작성연동)
+$ dir
+batch         gradle        module_ntree2-web.xml  README.md
+build         gradlew       netty                  RemoteSystemsTempFiles
+build.gradle  gradlew.bat   ntree2-web.properties  schedule
+common        link          ntree2-web.xml         Servers
+doc           make_env.bat  out                    settings.gradle
+ENV.md        mobile        phantom                web
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (issue-3959TTS변경계획서작성연동)
+$ git checkout tksr-work
+error: Your local changes to the following files would be overwritten by checkou                                       t:
+        link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest.java
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (issue-3959TTS변경계획서작성연동)
+$ git status
+On branch issue-3959TTS변경계획서작성연동
+Your branch is up-to-date with 'origin/issue-3959TTS변경계획서작성연동'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest                                       .java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (issue-3959TTS변경계획서작성연동)
+$ git stash
+Saved working directory and index state WIP on issue-3959TTS변경계획서작성연동:                                        d1af6c2e49 TTS 변경계획서 작성 연동 API#3959
+HEAD is now at d1af6c2e49 TTS 변경계획서 작성 연동 API#3959
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (issue-3959TTS변경계획서작성연동)
+$ git checkout tksr-work
+Switched to a new branch 'tksr-work'
+Branch tksr-work set up to track remote branch tksr-work from origin.
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git pull origin tksr-work
+From https://oss.navercorp.com/NTree2/NTree2-Web
+ * branch                  tksr-work  -> FETCH_HEAD
+Already up-to-date.
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git merge issue-39
+issue-3953DBIP2티켓정보Import
+issue-3959TTS변경계획서작성연동
+issue-3964티켓정보제공HTTP_XML
+issue-3968-한일_관리도메인zone_Import
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git merge issue-39
+issue-3953DBIP2티켓정보Import
+issue-3959TTS변경계획서작성연동
+issue-3964티켓정보제공HTTP_XML
+issue-3968-한일_관리도메인zone_Import
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git merge issue-3959TTS변경계획서작성연동
+Removing web/src/main/webapp/resources/app/pages/staff/cmdb/popup/idc-power-mana                                       ger.controller.js
+Auto-merging web/src/main/webapp/resources/app/components/filter/d.share.autocom                                       plete.filter.js
+Removing mobile/src/app/pages/partials/USERAUTHJOB/USERAUTHJOB017.html
+Removing mobile/src/app/pages/partials/SVRSR/SVRSR002.html
+Auto-merging common/src/main/java/com/nbp/ntree2/common/ticket/fault/service/Tkt                                       TypeFaultService.java
+Auto-merging common/src/main/java/com/nbp/ntree2/common/ticket/common/dto/TktDto                                       .java
+CONFLICT (content): Merge conflict in common/src/main/java/com/nbp/ntree2/common                                       /ticket/common/dto/TktDto.java
+Removing common/src/main/java/com/nbp/ntree2/common/link/domainzone/Iiii.java
+Auto-merging common/src/main/java/com/nbp/ntree2/common/link/dbip2ticket/service                                       /LinkDbip2TicketService.java
+Auto-merging common/src/main/java/com/nbp/ntree2/common/cmdb/server/service/Serv                                       erService.java
+Auto-merging common/src/main/java/com/nbp/ntree2/common/cmdb/server/repository/A                                       stServerRepository.java
+CONFLICT (content): Merge conflict in common/src/main/java/com/nbp/ntree2/common                                       /cmdb/server/repository/AstServerRepository.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work|MERGING)
+$ git status
+On branch tksr-work
+Your branch is up-to-date with 'origin/tksr-work'.
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/AthensNicSyn                                       cBatch.java
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/domain/Athen                                       sHostNetworkEntity.java
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/repository/A                                       thensSystemDao.java
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/service/Athe                                       nsSyncBatchService.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otCircuitExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otNetworkExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otServerExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otStorageExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/domainzone/service/                                       DomainZoneSyncBatchService.java
+        modified:   batch/src/main/resources/application-local.yml
+        modified:   batch/src/main/resources/application-naver-test.yml
+        modified:   batch/src/main/resources/application-test.yml
+        new file:   batch/src/main/resources/sqlmap-mybatis/athens.xml
+        new file:   batch/src/test/java/com/nbp/ntree2/batch/athens/AthensNicSyn                                       cBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotCirc                                       uitExcelBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotNetw                                       orkExcelBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotServ                                       erExcelBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotStor                                       ageExcelBatchTest.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/acl/repository/Co                                       mPubsecServiceIpMapRepository.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/acl/service/ACLSe                                       rvice.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/dto/CiSea                                       rchDto.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iCommonService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iJsonService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iUpdateService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iUpdateServiceInterface.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/domai                                       n/SyncAstInfCiadNicEntity.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/dto/C                                       iSearchForServerDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/repos                                       itory/AstInfCiadNicDao.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/repos                                       itory/AstInfCiadNicRepository.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/AstInfCiadNicBatchService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/AutoDiscoveredNicService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/ServerService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/ServerUpdateService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/storage/dto/                                       CiSearchForStorageDto.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/common/code/Codes                                       .java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/dto/AclD                                       etail.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/dto/AclI                                       p.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/roposito                                       ry/TktSrDao.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/service/                                       AclService.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/common/dto/L                                       egacyAbstractDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/common/excep                                       tion/LinkLegacyServiceException.java
+        renamed:    common/src/main/java/com/nbp/ntree2/common/link/dbip2ticket/                                       service/DBIP2TicketService.java -> common/src/main/java/com/nbp/ntree2/common/li                                       nk/dbip2ticket/service/LinkDbip2TicketService.java
+        deleted:    common/src/main/java/com/nbp/ntree2/common/link/domainzone/I                                       iii.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/DocDt                                       o.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/L4Req                                       Dto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/L4Req                                       SvrDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/SCMSR                                       esponseDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/ropositor                                       y/L4Dao.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/service/L                                       4Service.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/tts/service/                                       TtsService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/part/dto/PartDto.                                       java
+        modified:   common/src/main/java/com/nbp/ntree2/common/part/ntree1dao/Pr                                       tRelDao.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/part/service/Part                                       RelService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/report/service/Re                                       portService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/ccr/servic                                       e/TktTypeCcrService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/change/rep                                       ository/TktChangeRepository.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/change/ser                                       vice/TktTypeChangeService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/fault/serv                                       ice/TktTypeFaultService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/incident/s                                       ervice/TktTypeIncidentService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/infra/dto/                                       TktInfraDto.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/infra/serv                                       ice/TktTypeInfraService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/task/servi                                       ce/TktTaskService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/task/servi                                       ce/TktTypeTaskService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/util/JDomUtil.jav                                       a
+        modified:   common/src/main/resources/messages.properties
+        modified:   common/src/main/resources/messages_en_US.properties
+        modified:   common/src/main/resources/messages_ja_JP.properties
+        modified:   common/src/main/resources/messages_ko_KR.properties
+        modified:   common/src/main/resources/messages_zh_CN.properties
+        modified:   common/src/main/resources/sqlmap-mybatis/ci-search-for-serve                                       r.xml
+        modified:   common/src/main/resources/sqlmap-mybatis/ci-search-for-stora                                       ge.xml
+        new file:   common/src/main/resources/sqlmap-mybatis/inf-ciad-nic.xml
+        new file:   common/src/main/resources/sqlmap-mybatis/link_acl2.xml
+        new file:   common/src/main/resources/sqlmap-mybatis/link_l4.xml
+        modified:   common/src/main/resources/sqlmap-mybatis/part.xml
+        new file:   common/src/test/java/LamuneTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/cmdb/service/Serv                                       erServiceTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/cmdb/storage/serv                                       ice/CiSearchForStorageServiceTest.java
+        new file:   common/src/test/java/com/nbp/ntree2/common/link/acl/AclTest.                                       java
+        modified:   common/src/test/java/com/nbp/ntree2/common/link/dbip2ticket/                                       Dbip2TicketTest.java
+        new file:   common/src/test/java/com/nbp/ntree2/common/link/l4/L4Test.ja                                       va
+        modified:   common/src/test/java/com/nbp/ntree2/common/part/service/Part                                       RelServiceTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/report/ReportServ                                       iceTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/ticket/task/servi                                       ce/TktTaskServiceTest.java
+        modified:   gradle/wrapper/gradle-wrapper.jar
+        modified:   gradle/wrapper/gradle-wrapper.properties
+        new file:   link/src/main/java/com/nbp/ntree2/link/acl/service/LinkAclSe                                       rvice.java
+        new file:   link/src/main/java/com/nbp/ntree2/link/common/util/LegacyLin                                       kServiceUtil.java
+        new file:   link/src/main/java/com/nbp/ntree2/link/l4/service/LinkL4Serv                                       ice.java
+        modified:   link/src/main/java/com/nbp/ntree2/link/legacy/controller/Lin                                       kLegacyApiController.java
+        new file:   link/src/main/java/com/nbp/ntree2/link/tts/service/LinkTtsSe                                       rvice.java
+        modified:   link/src/test/java/com/nbp/ntree2/link/TestLinkControllerBas                                       e.java
+        new file:   link/src/test/java/com/nbp/ntree2/link/l4/L4ControllerTest.j                                       ava
+        modified:   link/src/test/java/com/nbp/ntree2/link/legacy/controller/Lin                                       kLegacyApiControllerTest.java
+        modified:   link/src/test/java/com/nbp/ntree2/link/nsight/controller/Nsi                                       ghtApiControllerTest.java
+        new file:   link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest                                       .java
+        modified:   mobile/src/app/components/constants/router.mapper.js
+        modified:   mobile/src/app/components/directives/m.directives.js
+        modified:   mobile/src/app/pages/partials/IDCVISIT/IDCVISIT001.html
+        modified:   mobile/src/app/pages/partials/IPCC/IPCC004.html
+        modified:   mobile/src/app/pages/partials/IPCC/IPCC010.html
+        modified:   mobile/src/app/pages/partials/ITSM/ITSM001.html
+        modified:   mobile/src/app/pages/partials/ITSM/ITSM002.html
+        modified:   mobile/src/app/pages/partials/SVRFTP/SVRFTP001.html
+        modified:   mobile/src/app/pages/partials/SVRNAS/SVRNAS001.html
+        modified:   mobile/src/app/pages/partials/SVRSR/SVRSR001.html
+        deleted:    mobile/src/app/pages/partials/SVRSR/SVRSR002.html
+        modified:   mobile/src/app/pages/partials/USERAUTHJOB/USERAUTHJOB016.htm                                       l
+        deleted:    mobile/src/app/pages/partials/USERAUTHJOB/USERAUTHJOB017.htm                                       l
+        modified:   mobile/src/app/scss/index.scss
+        modified:   web/src/main/asciidoc/contents.adoc
+        modified:   web/src/main/asciidoc/index.adoc
+        new file:   web/src/main/asciidoc/link_tts.adoc
+        modified:   web/src/main/java/com/nbp/ntree2/_infra/NTree2MvcConfigurati                                       on.java
+        modified:   web/src/main/java/com/nbp/ntree2/_infra/SiteMesh3Configurati                                       on.java
+        modified:   web/src/main/java/com/nbp/ntree2/controller/ACLController.ja                                       va
+        modified:   web/src/main/java/com/nbp/ntree2/controller/report/ReportApi                                       Controller.java
+        modified:   web/src/main/java/com/nbp/ntree2/controller/ticket/TicketApi                                       Controller.java
+        modified:   web/src/main/webapp/WEB-INF/jsp/public/cmdb/ci-view/ci-view-                                       layout.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/public/cmdb/ci-view/inc-ci-n                                       etwork.jsp
+        new file:   web/src/main/webapp/WEB-INF/jsp/staff/cmdb/idc-power-manager                                       .jsp
+        renamed:    web/src/main/webapp/WEB-INF/jsp/staff/cmdb/rack-list-manager                                       .jsp -> web/src/main/webapp/WEB-INF/jsp/staff/cmdb/idc-racklist-manager.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/staff/report/acl-status.jsp
+        new file:   web/src/main/webapp/WEB-INF/jsp/staff/report/popup/acl-pubse                                       cip-popup.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/staff/ticket/modules/idc-inf                                       o.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/staff/ticket/modules/relatio                                       n-part.jsp
+        modified:   web/src/main/webapp/resources/app/components/filter/d.share.                                       autocomplete.filter.js
+        modified:   web/src/main/webapp/resources/app/messages_en_US.js
+        modified:   web/src/main/webapp/resources/app/messages_ja_JP.js
+        modified:   web/src/main/webapp/resources/app/messages_ko_KR.js
+        modified:   web/src/main/webapp/resources/app/messages_zh_CN.js
+        modified:   web/src/main/webapp/resources/app/pages/public/cmdb/ci-view/                                       ci-code.service.js
+        modified:   web/src/main/webapp/resources/app/pages/public/cmdb/ci-view/                                       ci-view-network.controller.js
+        modified:   web/src/main/webapp/resources/app/pages/public/cmdb/ci-view/                                       ci-view.controller.js
+        new file:   web/src/main/webapp/resources/app/pages/staff/cmdb/idc-power                                       -manager.controller.js
+        renamed:    web/src/main/webapp/resources/app/pages/staff/cmdb/rack-list                                       -manager.controller.js -> web/src/main/webapp/resources/app/pages/staff/cmdb/idc                                       -racklist-manager.controller.js
+        deleted:    web/src/main/webapp/resources/app/pages/staff/cmdb/popup/idc                                       -power-manager.controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/report/acl-sta                                       tus.controller.js
+        new file:   web/src/main/webapp/resources/app/pages/staff/report/popup/a                                       cl-pubsecip-popup.controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /idc-info-controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /level-code-info-controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /relation-part-controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /relation-part/HDD.html
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/                                       repository/AstServerRepository.java
+        both modified:   common/src/main/java/com/nbp/ntree2/common/ticket/commo                                       n/dto/TktDto.java
+
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work|MERGING)
+$ git status
+On branch tksr-work
+Your branch is up-to-date with 'origin/tksr-work'.
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/AthensNicSyn                                       cBatch.java
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/domain/Athen                                       sHostNetworkEntity.java
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/repository/A                                       thensSystemDao.java
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/service/Athe                                       nsSyncBatchService.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otCircuitExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otNetworkExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otServerExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otStorageExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/domainzone/service/                                       DomainZoneSyncBatchService.java
+        modified:   batch/src/main/resources/application-local.yml
+        modified:   batch/src/main/resources/application-naver-test.yml
+        modified:   batch/src/main/resources/application-test.yml
+        new file:   batch/src/main/resources/sqlmap-mybatis/athens.xml
+        new file:   batch/src/test/java/com/nbp/ntree2/batch/athens/AthensNicSyn                                       cBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotCirc                                       uitExcelBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotNetw                                       orkExcelBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotServ                                       erExcelBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotStor                                       ageExcelBatchTest.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/acl/repository/Co                                       mPubsecServiceIpMapRepository.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/acl/service/ACLSe                                       rvice.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/dto/CiSea                                       rchDto.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iCommonService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iJsonService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iUpdateService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iUpdateServiceInterface.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/domai                                       n/SyncAstInfCiadNicEntity.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/dto/C                                       iSearchForServerDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/repos                                       itory/AstInfCiadNicDao.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/repos                                       itory/AstInfCiadNicRepository.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/AstInfCiadNicBatchService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/AutoDiscoveredNicService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/ServerService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/ServerUpdateService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/storage/dto/                                       CiSearchForStorageDto.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/common/code/Codes                                       .java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/dto/AclD                                       etail.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/dto/AclI                                       p.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/roposito                                       ry/TktSrDao.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/service/                                       AclService.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/common/dto/L                                       egacyAbstractDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/common/excep                                       tion/LinkLegacyServiceException.java
+        renamed:    common/src/main/java/com/nbp/ntree2/common/link/dbip2ticket/                                       service/DBIP2TicketService.java -> common/src/main/java/com/nbp/ntree2/common/li                                       nk/dbip2ticket/service/LinkDbip2TicketService.java
+        deleted:    common/src/main/java/com/nbp/ntree2/common/link/domainzone/I                                       iii.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/DocDt                                       o.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/L4Req                                       Dto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/L4Req                                       SvrDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/SCMSR                                       esponseDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/ropositor                                       y/L4Dao.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/service/L                                       4Service.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/tts/service/                                       TtsService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/part/dto/PartDto.                                       java
+        modified:   common/src/main/java/com/nbp/ntree2/common/part/ntree1dao/Pr                                       tRelDao.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/part/service/Part                                       RelService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/report/service/Re                                       portService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/ccr/servic                                       e/TktTypeCcrService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/change/rep                                       ository/TktChangeRepository.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/change/ser                                       vice/TktTypeChangeService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/fault/serv                                       ice/TktTypeFaultService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/incident/s                                       ervice/TktTypeIncidentService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/infra/dto/                                       TktInfraDto.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/infra/serv                                       ice/TktTypeInfraService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/task/servi                                       ce/TktTaskService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/task/servi                                       ce/TktTypeTaskService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/util/JDomUtil.jav                                       a
+        modified:   common/src/main/resources/messages.properties
+        modified:   common/src/main/resources/messages_en_US.properties
+        modified:   common/src/main/resources/messages_ja_JP.properties
+        modified:   common/src/main/resources/messages_ko_KR.properties
+        modified:   common/src/main/resources/messages_zh_CN.properties
+        modified:   common/src/main/resources/sqlmap-mybatis/ci-search-for-serve                                       r.xml
+        modified:   common/src/main/resources/sqlmap-mybatis/ci-search-for-stora                                       ge.xml
+        new file:   common/src/main/resources/sqlmap-mybatis/inf-ciad-nic.xml
+        new file:   common/src/main/resources/sqlmap-mybatis/link_acl2.xml
+        new file:   common/src/main/resources/sqlmap-mybatis/link_l4.xml
+        modified:   common/src/main/resources/sqlmap-mybatis/part.xml
+        new file:   common/src/test/java/LamuneTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/cmdb/service/Serv                                       erServiceTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/cmdb/storage/serv                                       ice/CiSearchForStorageServiceTest.java
+        new file:   common/src/test/java/com/nbp/ntree2/common/link/acl/AclTest.                                       java
+        modified:   common/src/test/java/com/nbp/ntree2/common/link/dbip2ticket/                                       Dbip2TicketTest.java
+        new file:   common/src/test/java/com/nbp/ntree2/common/link/l4/L4Test.ja                                       va
+        modified:   common/src/test/java/com/nbp/ntree2/common/part/service/Part                                       RelServiceTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/report/ReportServ                                       iceTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/ticket/task/servi                                       ce/TktTaskServiceTest.java
+        modified:   gradle/wrapper/gradle-wrapper.jar
+        modified:   gradle/wrapper/gradle-wrapper.properties
+        new file:   link/src/main/java/com/nbp/ntree2/link/acl/service/LinkAclSe                                       rvice.java
+        new file:   link/src/main/java/com/nbp/ntree2/link/common/util/LegacyLin                                       kServiceUtil.java
+        new file:   link/src/main/java/com/nbp/ntree2/link/l4/service/LinkL4Serv                                       ice.java
+        modified:   link/src/main/java/com/nbp/ntree2/link/legacy/controller/Lin                                       kLegacyApiController.java
+        new file:   link/src/main/java/com/nbp/ntree2/link/tts/service/LinkTtsSe                                       rvice.java
+        modified:   link/src/test/java/com/nbp/ntree2/link/TestLinkControllerBas                                       e.java
+        new file:   link/src/test/java/com/nbp/ntree2/link/l4/L4ControllerTest.j                                       ava
+        modified:   link/src/test/java/com/nbp/ntree2/link/legacy/controller/Lin                                       kLegacyApiControllerTest.java
+        modified:   link/src/test/java/com/nbp/ntree2/link/nsight/controller/Nsi                                       ghtApiControllerTest.java
+        new file:   link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest                                       .java
+        modified:   mobile/src/app/components/constants/router.mapper.js
+        modified:   mobile/src/app/components/directives/m.directives.js
+        modified:   mobile/src/app/pages/partials/IDCVISIT/IDCVISIT001.html
+        modified:   mobile/src/app/pages/partials/IPCC/IPCC004.html
+        modified:   mobile/src/app/pages/partials/IPCC/IPCC010.html
+        modified:   mobile/src/app/pages/partials/ITSM/ITSM001.html
+        modified:   mobile/src/app/pages/partials/ITSM/ITSM002.html
+        modified:   mobile/src/app/pages/partials/SVRFTP/SVRFTP001.html
+        modified:   mobile/src/app/pages/partials/SVRNAS/SVRNAS001.html
+        modified:   mobile/src/app/pages/partials/SVRSR/SVRSR001.html
+        deleted:    mobile/src/app/pages/partials/SVRSR/SVRSR002.html
+        modified:   mobile/src/app/pages/partials/USERAUTHJOB/USERAUTHJOB016.htm                                       l
+        deleted:    mobile/src/app/pages/partials/USERAUTHJOB/USERAUTHJOB017.htm                                       l
+        modified:   mobile/src/app/scss/index.scss
+        modified:   web/src/main/asciidoc/contents.adoc
+        modified:   web/src/main/asciidoc/index.adoc
+        new file:   web/src/main/asciidoc/link_tts.adoc
+        modified:   web/src/main/java/com/nbp/ntree2/_infra/NTree2MvcConfigurati                                       on.java
+        modified:   web/src/main/java/com/nbp/ntree2/_infra/SiteMesh3Configurati                                       on.java
+        modified:   web/src/main/java/com/nbp/ntree2/controller/ACLController.ja                                       va
+        modified:   web/src/main/java/com/nbp/ntree2/controller/report/ReportApi                                       Controller.java
+        modified:   web/src/main/java/com/nbp/ntree2/controller/ticket/TicketApi                                       Controller.java
+        modified:   web/src/main/webapp/WEB-INF/jsp/public/cmdb/ci-view/ci-view-                                       layout.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/public/cmdb/ci-view/inc-ci-n                                       etwork.jsp
+        new file:   web/src/main/webapp/WEB-INF/jsp/staff/cmdb/idc-power-manager                                       .jsp
+        renamed:    web/src/main/webapp/WEB-INF/jsp/staff/cmdb/rack-list-manager                                       .jsp -> web/src/main/webapp/WEB-INF/jsp/staff/cmdb/idc-racklist-manager.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/staff/report/acl-status.jsp
+        new file:   web/src/main/webapp/WEB-INF/jsp/staff/report/popup/acl-pubse                                       cip-popup.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/staff/ticket/modules/idc-inf                                       o.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/staff/ticket/modules/relatio                                       n-part.jsp
+        modified:   web/src/main/webapp/resources/app/components/filter/d.share.                                       autocomplete.filter.js
+        modified:   web/src/main/webapp/resources/app/messages_en_US.js
+        modified:   web/src/main/webapp/resources/app/messages_ja_JP.js
+        modified:   web/src/main/webapp/resources/app/messages_ko_KR.js
+        modified:   web/src/main/webapp/resources/app/messages_zh_CN.js
+        modified:   web/src/main/webapp/resources/app/pages/public/cmdb/ci-view/                                       ci-code.service.js
+        modified:   web/src/main/webapp/resources/app/pages/public/cmdb/ci-view/                                       ci-view-network.controller.js
+        modified:   web/src/main/webapp/resources/app/pages/public/cmdb/ci-view/                                       ci-view.controller.js
+        new file:   web/src/main/webapp/resources/app/pages/staff/cmdb/idc-power                                       -manager.controller.js
+        renamed:    web/src/main/webapp/resources/app/pages/staff/cmdb/rack-list                                       -manager.controller.js -> web/src/main/webapp/resources/app/pages/staff/cmdb/idc                                       -racklist-manager.controller.js
+        deleted:    web/src/main/webapp/resources/app/pages/staff/cmdb/popup/idc                                       -power-manager.controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/report/acl-sta                                       tus.controller.js
+        new file:   web/src/main/webapp/resources/app/pages/staff/report/popup/a                                       cl-pubsecip-popup.controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /idc-info-controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /level-code-info-controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /relation-part-controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /relation-part/HDD.html
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/                                       repository/AstServerRepository.java
+        both modified:   common/src/main/java/com/nbp/ntree2/common/ticket/commo                                       n/dto/TktDto.java
+
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work|MERGING)
+$ git add .
+fatal: Unable to create 'C:/dev/git/NTree2-Web/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work|MERGING)
+$ git add .
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work|MERGING)
+$ git status
+gitOn branch tksr-work
+Your branch is up-to-date with 'origin/tksr-work'.
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/AthensNicSyn                                       cBatch.java
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/domain/Athen                                       sHostNetworkEntity.java
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/repository/A                                       thensSystemDao.java
+        new file:   batch/src/main/java/com/nbp/ntree2/batch/athens/service/Athe                                       nsSyncBatchService.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otCircuitExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otNetworkExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otServerExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/cmdb/excel/CiSnapsh                                       otStorageExcelBatch.java
+        modified:   batch/src/main/java/com/nbp/ntree2/batch/domainzone/service/                                       DomainZoneSyncBatchService.java
+        modified:   batch/src/main/resources/application-local.yml
+        modified:   batch/src/main/resources/application-naver-test.yml
+        modified:   batch/src/main/resources/application-test.yml
+        new file:   batch/src/main/resources/sqlmap-mybatis/athens.xml
+        new file:   batch/src/test/java/com/nbp/ntree2/batch/athens/AthensNicSyn                                       cBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotCirc                                       uitExcelBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotNetw                                       orkExcelBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotServ                                       erExcelBatchTest.java
+        modified:   batch/src/test/java/com/nbp/ntree2/batch/cmdb/CiSnapshotStor                                       ageExcelBatchTest.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/acl/repository/Co                                       mPubsecServiceIpMapRepository.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/acl/service/ACLSe                                       rvice.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/dto/CiSea                                       rchDto.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iCommonService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iJsonService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iUpdateService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/ci/service/C                                       iUpdateServiceInterface.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/domai                                       n/SyncAstInfCiadNicEntity.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/dto/C                                       iSearchForServerDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/repos                                       itory/AstInfCiadNicDao.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/repos                                       itory/AstInfCiadNicRepository.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/repos                                       itory/AstServerRepository.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/AstInfCiadNicBatchService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/AutoDiscoveredNicService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/ServerService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/server/servi                                       ce/ServerUpdateService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/cmdb/storage/dto/                                       CiSearchForStorageDto.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/common/code/Codes                                       .java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/dto/AclD                                       etail.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/dto/AclI                                       p.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/roposito                                       ry/TktSrDao.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/acl/service/                                       AclService.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/common/dto/L                                       egacyAbstractDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/common/excep                                       tion/LinkLegacyServiceException.java
+        renamed:    common/src/main/java/com/nbp/ntree2/common/link/dbip2ticket/                                       service/DBIP2TicketService.java -> common/src/main/java/com/nbp/ntree2/common/li                                       nk/dbip2ticket/service/LinkDbip2TicketService.java
+        deleted:    common/src/main/java/com/nbp/ntree2/common/link/domainzone/I                                       iii.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/DocDt                                       o.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/L4Req                                       Dto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/L4Req                                       SvrDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/dto/SCMSR                                       esponseDto.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/ropositor                                       y/L4Dao.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/l4/service/L                                       4Service.java
+        new file:   common/src/main/java/com/nbp/ntree2/common/link/tts/service/                                       TtsService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/part/dto/PartDto.                                       java
+        modified:   common/src/main/java/com/nbp/ntree2/common/part/ntree1dao/Pr                                       tRelDao.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/part/service/Part                                       RelService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/report/service/Re                                       portService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/ccr/servic                                       e/TktTypeCcrService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/change/rep                                       ository/TktChangeRepository.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/change/ser                                       vice/TktTypeChangeService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/common/dto                                       /TktDto.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/fault/serv                                       ice/TktTypeFaultService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/incident/s                                       ervice/TktTypeIncidentService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/infra/dto/                                       TktInfraDto.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/infra/serv                                       ice/TktTypeInfraService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/task/servi                                       ce/TktTaskService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/ticket/task/servi                                       ce/TktTypeTaskService.java
+        modified:   common/src/main/java/com/nbp/ntree2/common/util/JDomUtil.jav                                       a
+        modified:   common/src/main/resources/messages.properties
+        modified:   common/src/main/resources/messages_en_US.properties
+        modified:   common/src/main/resources/messages_ja_JP.properties
+        modified:   common/src/main/resources/messages_ko_KR.properties
+        modified:   common/src/main/resources/messages_zh_CN.properties
+        modified:   common/src/main/resources/sqlmap-mybatis/ci-search-for-serve                                       r.xml
+        modified:   common/src/main/resources/sqlmap-mybatis/ci-search-for-stora                                       ge.xml
+        new file:   common/src/main/resources/sqlmap-mybatis/inf-ciad-nic.xml
+        new file:   common/src/main/resources/sqlmap-mybatis/link_acl2.xml
+        new file:   common/src/main/resources/sqlmap-mybatis/link_l4.xml
+        modified:   common/src/main/resources/sqlmap-mybatis/part.xml
+        new file:   common/src/test/java/LamuneTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/cmdb/service/Serv                                       erServiceTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/cmdb/storage/serv                                       ice/CiSearchForStorageServiceTest.java
+        new file:   common/src/test/java/com/nbp/ntree2/common/link/acl/AclTest.                                       java
+        modified:   common/src/test/java/com/nbp/ntree2/common/link/dbip2ticket/                                       Dbip2TicketTest.java
+        new file:   common/src/test/java/com/nbp/ntree2/common/link/l4/L4Test.ja                                       va
+        modified:   common/src/test/java/com/nbp/ntree2/common/part/service/Part                                       RelServiceTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/report/ReportServ                                       iceTest.java
+        modified:   common/src/test/java/com/nbp/ntree2/common/ticket/task/servi                                       ce/TktTaskServiceTest.java
+        modified:   gradle/wrapper/gradle-wrapper.jar
+        modified:   gradle/wrapper/gradle-wrapper.properties
+        new file:   link/src/main/java/com/nbp/ntree2/link/acl/service/LinkAclSe                                       rvice.java
+        new file:   link/src/main/java/com/nbp/ntree2/link/common/util/LegacyLin                                       kServiceUtil.java
+        new file:   link/src/main/java/com/nbp/ntree2/link/l4/service/LinkL4Serv                                       ice.java
+        modified:   link/src/main/java/com/nbp/ntree2/link/legacy/controller/Lin                                       kLegacyApiController.java
+        new file:   link/src/main/java/com/nbp/ntree2/link/tts/service/LinkTtsSe                                       rvice.java
+        modified:   link/src/test/java/com/nbp/ntree2/link/TestLinkControllerBas                                       e.java
+        new file:   link/src/test/java/com/nbp/ntree2/link/l4/L4ControllerTest.j                                       ava
+        modified:   link/src/test/java/com/nbp/ntree2/link/legacy/controller/Lin                                       kLegacyApiControllerTest.java
+        modified:   link/src/test/java/com/nbp/ntree2/link/nsight/controller/Nsi                                       ghtApiControllerTest.java
+        new file:   link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest                                       .java
+        modified:   mobile/src/app/components/constants/router.mapper.js
+        modified:   mobile/src/app/components/directives/m.directives.js
+        modified:   mobile/src/app/pages/partials/IDCVISIT/IDCVISIT001.html
+        modified:   mobile/src/app/pages/partials/IPCC/IPCC004.html
+        modified:   mobile/src/app/pages/partials/IPCC/IPCC010.html
+        modified:   mobile/src/app/pages/partials/ITSM/ITSM001.html
+        modified:   mobile/src/app/pages/partials/ITSM/ITSM002.html
+        modified:   mobile/src/app/pages/partials/SVRFTP/SVRFTP001.html
+        modified:   mobile/src/app/pages/partials/SVRNAS/SVRNAS001.html
+        modified:   mobile/src/app/pages/partials/SVRSR/SVRSR001.html
+        deleted:    mobile/src/app/pages/partials/SVRSR/SVRSR002.html
+        modified:   mobile/src/app/pages/partials/USERAUTHJOB/USERAUTHJOB016.htm                                       l
+        deleted:    mobile/src/app/pages/partials/USERAUTHJOB/USERAUTHJOB017.htm                                       l
+        modified:   mobile/src/app/scss/index.scss
+        modified:   web/src/main/asciidoc/contents.adoc
+        modified:   web/src/main/asciidoc/index.adoc
+        new file:   web/src/main/asciidoc/link_tts.adoc
+        modified:   web/src/main/java/com/nbp/ntree2/_infra/NTree2MvcConfigurati                                       on.java
+        modified:   web/src/main/java/com/nbp/ntree2/_infra/SiteMesh3Configurati                                       on.java
+        modified:   web/src/main/java/com/nbp/ntree2/controller/ACLController.ja                                       va
+        modified:   web/src/main/java/com/nbp/ntree2/controller/report/ReportApi                                       Controller.java
+        modified:   web/src/main/java/com/nbp/ntree2/controller/ticket/TicketApi                                       Controller.java
+        modified:   web/src/main/webapp/WEB-INF/jsp/public/cmdb/ci-view/ci-view-                                       layout.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/public/cmdb/ci-view/inc-ci-n                                       etwork.jsp
+        new file:   web/src/main/webapp/WEB-INF/jsp/staff/cmdb/idc-power-manager                                       .jsp
+        renamed:    web/src/main/webapp/WEB-INF/jsp/staff/cmdb/rack-list-manager                                       .jsp -> web/src/main/webapp/WEB-INF/jsp/staff/cmdb/idc-racklist-manager.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/staff/report/acl-status.jsp
+        new file:   web/src/main/webapp/WEB-INF/jsp/staff/report/popup/acl-pubse                                       cip-popup.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/staff/ticket/modules/idc-inf                                       o.jsp
+        modified:   web/src/main/webapp/WEB-INF/jsp/staff/ticket/modules/relatio                                       n-part.jsp
+        modified:   web/src/main/webapp/resources/app/components/filter/d.share.                                       autocomplete.filter.js
+        modified:   web/src/main/webapp/resources/app/messages_en_US.js
+        modified:   web/src/main/webapp/resources/app/messages_ja_JP.js
+        modified:   web/src/main/webapp/resources/app/messages_ko_KR.js
+        modified:   web/src/main/webapp/resources/app/messages_zh_CN.js
+        modified:   web/src/main/webapp/resources/app/pages/public/cmdb/ci-view/                                       ci-code.service.js
+        modified:   web/src/main/webapp/resources/app/pages/public/cmdb/ci-view/                                       ci-view-network.controller.js
+        modified:   web/src/main/webapp/resources/app/pages/public/cmdb/ci-view/                                       ci-view.controller.js
+        ne w file:   web/src/main/webapp/resources/app/pages/staff/cmdb/idc-powe                                       r-manager.controller.js
+        renamed:    web/src/main/webapp/resources/app/pages/staff/cmdb/rack-list                                       -manager.controller.js -> web/src/main/webapp/resources/app/pages/staff/cmdb/idc                                       -racklist-manager.controller.js
+        deleted:    web/src/main/webapp/resources/app/pages/staff/cmdb/popup/idc                                       -power-manager.controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/report/acl-sta                                       tus.controller.js
+        new file:   web/src/main/webapp/resources/app/pages/staff/report/popup/a                                       cl-pubsecip-popup.controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /idc-info-controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /level-code-info-controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /relation-part-controller.js
+        modified:   web/src/main/webapp/resources/app/pages/staff/ticket/modules                                       /relation-part/HDD.html
+
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work|MERGING)
+$ git commit -v
+[tksr-work 9e0ce53998] Merge branch 'issue-3959TTS변경계획서작성연동' into tksr-                                       work
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ commit -v ^C
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git push origin tksr-work
+Counting objects: 76, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (58/58), done.
+Writing objects: 100% (76/76), 8.06 KiB | 0 bytes/s, done.
+Total 76 (delta 38), reused 0 (delta 0)
+remote: Resolving deltas: 100% (38/38), completed with 38 local objects.
+To https://oss.navercorp.com/NTree2/NTree2-Web
+   72c23bc7e5..9e0ce53998  tksr-work -> tksr-work
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git checkout issue-39
+issue-3909
+issue-3953DBIP2티켓정보Import
+issue-3959TTS변경계획서작성연동
+issue-3964티켓정보제공HTTP_XML
+issue-3968-한일_관리도메인zone_Import
+issue-3972-CCR-UI
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git checkout issue-39
+issue-3909
+issue-3953DBIP2티켓정보Import
+issue-3959TTS변경계획서작성연동
+issue-3964티켓정보제공HTTP_XML
+issue-3968-한일_관리도메인zone_Import
+issue-3972-CCR-UI
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git checkout issue-39
+issue-3909
+issue-3953DBIP2티켓정보Import
+issue-3959TTS변경계획서작성연동
+issue-3964티켓정보제공HTTP_XML
+issue-3968-한일_관리도메인zone_Import
+issue-3972-CCR-UI
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git checkout issue-395
+issue-3953DBIP2티켓정보Import     issue-3959TTS변경계획서작성연동
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git checkout issue-395
+issue-3953DBIP2티켓정보Import     issue-3959TTS변경계획서작성연동
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git checkout issue-395
+issue-3953DBIP2티켓정보Import     issue-3959TTS변경계획서작성연동
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git checkout issue-3959TTS변경계획서작성연동
+Display all 185 possibilities? (y or n)
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (tksr-work)
+$ git checkout issue-3959TTS변경계획서작성연동
+Switched to branch 'issue-3959TTS변경계획서작성연동'
+Your branch is up-to-date with 'origin/issue-3959TTS변경계획서작성연동'.
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (issue-3959TTS변경계획서작성연동)
+$ git stash pop
+On branch issue-3959TTS변경계획서작성연동
+Your branch is up-to-date with 'origin/issue-3959TTS변경계획서작성연동'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   link/src/test/java/com/nbp/ntree2/link/tts/TtsControllerTest                                       .java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (8d6b4bf5bad4c7c6b19d44c30e02e8c2af1f94ee)
+
+NAVER@AD00047454 MINGW64 /c/dev/git/NTree2-Web (issue-3959TTS변경계획서작성연동)
+$

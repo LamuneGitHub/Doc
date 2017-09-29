@@ -1,0 +1,47 @@
+### 참고
+
+---------------------------	
+NTree 2.0 
+	
+	허드슨의 실행 cmd
+		cd /home1/irteam/deploy/ntree2-batch 
+		java -Xmx1024m -Xms512m -jar batch.jar --spring.profiles.active=naver-test -ntree2.batch.name=nsightSyncBatch
+
+	Main : NTree2BatchApplication
+	
+
+	* 레거시 배치는 NTree2LegacyBatch  인터페이스 구현 해야함
+	* 레거시 배치는 NTree2BatchBase Abstract를 상속 해야함
+		- SSO 로그인 처리	
+
+		
+
+NsightSyncBatchTest
+
+------------------------------
+
+
+		#	getAllDomainZone
+		
+		-- 배치 실행 아이디는 : NB90341 ( NTREE_SYSTEM_EMPNO 이 맞는가? )
+		
+		linednsHost="devdns.linecorp.com";
+		linednsPort=80;
+		
+===================================================
+
+	배치 메인 
+		com.nbp.ntree2.batch.domainzone.	DomainZoneSyncBatch
+			@Service("domainZoneSyncBatch")
+		
+		com.nbp.ntree2.batch.domainzone.service	DomainZoneSyncBatchService
+
+
+
+		
+
+
+
+===================================================
+
+

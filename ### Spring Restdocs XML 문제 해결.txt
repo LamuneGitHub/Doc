@@ -1,0 +1,29 @@
+### Spring Restdocs XML 문제 해결
+
+TransformerFactory implementation: org.apache.xalan.processor.TransformerFactoryImpl loaded from: file:/C:/Users/NAVER.AD00047454/.gradle/caches/modules-2/files-2.1/xalan/xalan/2.7.1/75f1d83ce27bab5f29fff034fc74aa9f7266f22a/xalan-2.7.1.jar
+
+TransformerFactory를 구현하는 구현체가 여러가지가 있는데 그중 특정 구현체는
+	transformerFactory.setAttribute("indent-number", 4);
+	
+	indent-number 를 지원하지 않음 
+		-> 지원하는 구현체로 바꿔 주면 문제 해결됨
+
+		
+ 현재 우리 프로젝트에 로드되고 있는 
+ TransformerFactory 구현체는
+	.gradle/caches/modules-2/files-2.1/xalan/xalan/2.7.1/75f1d83ce27bab5f29fff034fc74aa9f7266f22a/xalan-2.7.1.jar
+	의 org.apache.xalan.processor.TransformerFactoryImpl 임
+	
+이 구현체를 JDK 1.8의 com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl 
+	의 구현체로 변경해 주면 Spring-restdocs 에서 에러 나지 않음
+	
+구현체를 지정하는 방법은 
+	http://docs.oracle.com/javase/8/docs/api/javax/xml/transform/TransformerFactory.html
+	
+에 의하면 1순위가 System property 라고 함
+
+	시스템 환경 변수에 -Djavax.xml.transform.TransformerFactory=com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl
+	
+	
+
+ 
