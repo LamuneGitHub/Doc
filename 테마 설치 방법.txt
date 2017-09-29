@@ -1,0 +1,7 @@
+Installation
+
+Download VS2015-Dark.xml, making sure to get the raw version, to %PROGRAMFILES%\Notepad++\themes (%PROGRAMFILES(X86)%\Notepad++\themes on 64-bit systems).
+Restart Notepad++.
+Open Settings->Style Configurator.
+Select VS2015-Dark from the theme drop-down box.
+Click Save & Close
