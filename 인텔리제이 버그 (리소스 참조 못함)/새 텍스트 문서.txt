@@ -1,0 +1,7 @@
+공지입니다. 
+Intellij 최신버전에서 
+batch, link, web IDE에서 테스트를 돌리는경우 resource디렉토리를 참조하지 못하는 문제가 있습니다. 
+
+그럴때는 run configuration 에서 before launch section에 :processResources task를 같이 설정해주세요 
+
+test 수행전 resources들을 카피해주는 역할을 합니다. 
